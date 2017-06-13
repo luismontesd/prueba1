@@ -35,8 +35,7 @@ function mostrarMapa(){
     var coordenadas = {lat: parseFloat(lati), lng: parseFloat(long)};
     navigator.geolocation.getCurrentPosition(posicionUsuario);
         latUser=parseFloat(localStorage.getItem('latUser'));
-        //longUser=parseFloat(localStorage.getItem('longUser'));
-        longUser=-100.0010719;
+        longUser=parseFloat(localStorage.getItem('longUser'));
         var coordenadasUser = {lat: latUser, lng: longUser};
    var map = new google.maps.Map(document.getElementById('mapa'), {
             zoom: 17,
